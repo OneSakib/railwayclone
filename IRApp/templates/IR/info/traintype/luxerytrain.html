@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}
+    Luxury Train
+{% endblock %}
+
+{% load static %}
+{% block content %}
+    <div class="container-fluid">
+        <h5 class="text-center bg-primary text-white p-2">LUXURY TOURIST TRAINS</h5>
+        <p class="text-center">
+            <img src="{% static 'img/Maharaja.jpg' %}" alt="no">
+        </p>
+        <h6 class="text-center "><a href="http://www.the-maharajas.com/" class="text-dark">Maharajas' Express</a></h6>
+        <p><a href="http://rtdc.in/pow.htm">Palace on Wheels</a></p>
+        <p><a href="http://www.maharashtratourism.gov.in/">Deccan Odyssey</a></p>
+        <p><a href="http://thegoldenchariot.org/">Golden Chariot</a></p>
+        <p><a href="http://rtdc.rajasthan.gov.in/rrow.aspx">Royal Rajasthan on Wheels</a></p>
+        <h6 class="text-center"><a href="http://www.the-maharajas.com/" class="text-dark">OTHER TOURIST TRAINS</a></h6>
+        <p><a href="http://www.railtourismindia.com/buddha">Mahaparinirvan Express</a></p>
+        <p><a href="http://www.railtourismindia.com/">Bharat Darshan</a></p>
+        <p><a href="http://www.irctctourism.com/trains/fairyqueen/fq001.html">Steam Express</a></p>
+    </div>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %}
+    Welcome to Indian Railway
+{% endblock %}
+
+{% load static %}
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <h5 class="text-center bg-primary text-white p-2">Train Schedule</h5>
+            <p class="text-center">Please enter few characters of Train Name OR few digits of Train Number.
+                e.g. To get the train schedule for Himachal Express i.e. Train No. 14553 -- either enter himachal or
+                145</p>
+            <div class="col-6">
+                <label for="traino" class="form-label">Enter Train Number</label>
+            </div>
+            <div class="col-6">
+                <input id="traino" type="text" placeholder="Enter Train Number" class="form-control">
+            </div>
+            <p class="text-center">*Train Schedule is shown only for reserved trains defined in the PRS system.</p>
+            <p class="text-center"><input type="submit" value="Get Schedule" class="btn btn-primary"></p>
+        </div>
+    </div>
+{% endblock %}

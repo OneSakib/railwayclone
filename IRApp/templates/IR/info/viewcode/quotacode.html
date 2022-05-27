@@ -1,0 +1,170 @@
+{% extends 'base.html' %}
+{% block title %}
+    Welcome to Indian Railway
+{% endblock %}
+
+{% load static %}
+{% block content %}
+    <div class="container-fluid">
+        <h5 class="text-center bg-primary text-white p-2">Quotas in Indian Railways</h5>
+        <div class="table-responsive">
+            <table class="table table-bordered" id="table1">
+
+                <tbody>
+                <tr class="heading_table_top bg-primary text-white">
+                    <td><strong>S. No.</strong></td>
+                    <td><strong>Quota</strong></td>
+                    <td><strong> Description</strong></td>
+                </tr>
+                <tr>
+
+                    <td class="table_border_both_center">1.</td>
+                    <td class="table_border_both_left">GN</td>
+                    <td class="table_border_both_left"> General Quota</td>
+                </tr>
+                <tr>
+                    <td class="table_border_both_center">2.</td>
+
+                    <td class="table_border_both_left">LD</td>
+                    <td class="table_border_both_left"> Ladies Quota</td>
+                </tr>
+                <tr>
+                    <td class="table_border_both_center">3.</td>
+                    <td class="table_border_both_left">HO</td>
+
+                    <td class="table_border_both_left"> Head quarters/high official Quota</td>
+                </tr>
+                <tr>
+                    <td class="table_border_both_center">4.</td>
+                    <td class="table_border_both_left">DF</td>
+                    <td class="table_border_both_left"> Defence Quota</td>
+
+                </tr>
+                <tr>
+                    <td class="table_border_both_center">
+                        5.
+                    </td>
+                    <td class="table_border_both_left">PH</td>
+                    <td class="table_border_both_left"> Parliament house
+                        Quota
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="table_border_both_center">
+                        6.
+                    </td>
+                    <td class="table_border_both_left">FT</td>
+                    <td class="table_border_both_left"> Foreign
+                        Tourist Quota
+                    </td>
+                </tr>
+                <tr>
+
+                    <td class="table_border_both_center">7.</td>
+                    <td class="table_border_both_left">DP</td>
+                    <td class="table_border_both_left"> Duty Pass Quota</td>
+                </tr>
+                <tr>
+                    <td class="table_border_both_center">8.</td>
+
+                    <td class="table_border_both_left">tq</td>
+                    <td class="table_border_both_left"> Tatkal Quota</td>
+                </tr>
+                <tr>
+                    <td class="table_border_both_center">9.</td>
+                    <td class="table_border_both_left">PT</td>
+
+                    <td class="table_border_both_left"> Premium Tatkal Quota</td>
+                </tr>
+                <tr>
+                    <td class="table_border_both_center">10.</td>
+                    <td class="table_border_both_left">SS</td>
+                    <td class="table_border_both_left"> Female(above 45 Year)/Senior
+                        Citizen/Travelling alone
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="table_border_both_center">
+                        11.
+                    </td>
+                    <td class="table_border_both_left">HP</td>
+                    <td class="table_border_both_left"> Physically Handicapped Quota</td>
+                </tr>
+
+                <tr>
+                    <td class="table_border_both_center">
+                        12.
+                    </td>
+                    <td class="table_border_both_left">RE</td>
+                    <td class="table_border_both_left"> Railway Employee Staff on Duty for the
+                        train
+                    </td>
+                </tr>
+                <tr>
+                    <td class="table_border_both_center">13.</td>
+                    <td class="table_border_both_left">GNRS</td>
+                    <td class="table_border_both_left"> General Quota Road Side</td>
+
+                </tr>
+                <tr>
+                    <td class="table_border_both_center">
+                        14.
+                    </td>
+                    <td class="table_border_both_left">OS</td>
+                    <td class="table_border_both_left"> Out Station</td>
+                </tr>
+
+                <tr>
+                    <td class="table_border_both_center">
+                        15.
+                    </td>
+                    <td class="table_border_both_left">PQ</td>
+                    <td class="table_border_both_left"> Pooled Quota</td>
+                </tr>
+                <tr>
+                    <td class="table_border_both_center">
+                        16.
+                    </td>
+                    <td class="table_border_both_left">RC(RAC)</td>
+                    <td class="table_border_both_left"> Reservation Against Cancellation</td>
+                </tr>
+
+                <tr>
+                    <td class="table_border_both_center">
+                        17.
+                    </td>
+                    <td class="table_border_both_left">RS</td>
+                    <td class="table_border_both_left"> Road Side</td>
+                </tr>
+                <tr>
+                    <td class="table_border_both_center">
+                        18.
+                    </td>
+                    <td class="table_border_both_left">YU</td>
+                    <td class="table_border_both_left"> Yuva</td>
+                </tr>
+
+                <tr>
+                    <td class="table_border_both_center">
+                        19.
+                    </td>
+                    <td class="table_border_both_left">LB</td>
+                    <td class="table_border_both_left"> Lower Berth</td>
+                </tr>
+                </tbody>
+            </table>
+            <h6>Note:</h6>
+            <p>RAC is a special provision to 'split' a berth into two or more seats. This is really speaking not a quota
+                but it is a predefined allocation to take care of the above mentioned special provision.</p>
+            <p>In case of each road-side station quota, berths/seats are booked by the originating station for journeys
+                up-to the road-side station only up-to the extent of accommodation earmarked for that Road-Side quota
+                .In such cases, distance restriction does not apply. If that berths/seat is redefined from a remote
+                location, then booking can also be done beyond the road side station, within the limits defined for the
+                remote location quota. In no case can a through passenger be given accommodation in the RS berth and the
+                redefined portion. For eg., a passenger traveling from NDLS to MAS cannot be given accommodation in a
+                berth defined as GNRS up-to BPL and subsequently redefined as GN from BPL to MAS.</p>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,520 @@
+{% extends 'base.html' %}
+{% block title %}
+    Welcome to Indian Railway
+{% endblock %}
+
+{% load static %}
+{% block content %}
+    <div class="container-fluid">
+        <h5 class="text-center bg-primary text-white p-2">Tatkal Scheme</h5>
+        <ul>
+            <li>As per announcement made in the Railway Budget 2013-14, It has been decided to revise Tatkal Charges as
+                given below.
+            </li>
+            <li>The Tatkal Charges have been fixed as a percentage of fare at the rate of 10% of basic fare for second
+                class and 30% of basic fare for all other classes subject to minimum and maximum as given in the table
+                below
+            </li>
+        </ul>
+        <h6 class="text-center">Tatkal Charges before journey starting date 24.12.2015</h6>
+        <div class="table-responsive">
+
+            <table border="1" class="table table-bordered col-md-12">
+                <tbody>
+                <tr style="height: 19.5pt">
+                    <td width="19%" style="width: 19.0%; height: 19.5pt; border: 1.0pt inset black; ">
+                        <p class="MsoNormal" align="center"
+                           style="text-align: center; line-height: normal; margin-bottom: .0001pt">
+                            <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						Class of Travel</span></b></p></td>
+                    <td width="40%"
+                        style="width: 40.0%; height: 19.5pt; border-left: medium none; border-right: 1.0pt inset black; border-top: 1.0pt inset black; border-bottom: 1.0pt inset black; ">
+                        <p class="MsoNormal" align="center"
+                           style="text-align: center; line-height: normal; margin-bottom: .0001pt">
+                            <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						Minimum Tatkal Charges (in Rs.)</span></b></p></td>
+                    <td width="40%"
+                        style="width: 40.0%; height: 19.5pt; border-left: medium none; border-right: 1.0pt inset black; border-top: 1.0pt inset black; border-bottom: 1.0pt inset black; ">
+                        <p class="MsoNormal" align="center"
+                           style="text-align: center; line-height: normal; margin-bottom: .0001pt">
+                            <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						Maximum Tatkal Charges</span></b><span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						<b>(in Rs.)</b></span></p></td>
+                </tr>
+                <tr style="height: 10.5pt">
+                    <td width="19%"
+                        style="width: 19.0%; height: 10.5pt; border-left: 1.0pt inset black; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                        <p class="MsoNormal" align="center"
+                           style="text-align: center; line-height: 10.5pt; margin-bottom: .0001pt">
+                            <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						Second (sitting) </span></b></p></td>
+                    <td width="40%"
+                        style="width: 40.0%; height: 10.5pt; border-left: medium none; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                        <p class="MsoNormal" align="center"
+                           style="text-align: center; line-height: 10.5pt; margin-bottom: .0001pt">
+                            <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						10.00</span></b></p></td>
+                    <td width="40%"
+                        style="width: 40.0%; height: 10.5pt; border-left: medium none; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                        <p class="MsoNormal" align="center"
+                           style="text-align: center; line-height: 10.5pt; margin-bottom: .0001pt">
+                            <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						15.00</span></b></p></td>
+                </tr>
+                <tr style="height: 9.75pt">
+                    <td width="19%"
+                        style="width: 19.0%; height: 9.75pt; border-left: 1.0pt inset black; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                        <p class="MsoNormal" align="center"
+                           style="text-align: center; line-height: 9.75pt; margin-bottom: .0001pt">
+                            <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						Sleeper</span></b></p></td>
+                    <td width="40%"
+                        style="width: 40.0%; height: 9.75pt; border-left: medium none; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                        <p class="MsoNormal" align="center"
+                           style="text-align: center; line-height: 9.75pt; margin-bottom: .0001pt">
+                            <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						90.00</span></b></p></td>
+                    <td width="40%"
+                        style="width: 40.0%; height: 9.75pt; border-left: medium none; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                        <p class="MsoNormal" align="center"
+                           style="text-align: center; line-height: 9.75pt; margin-bottom: .0001pt">
+                            <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						175.00</span></b></p></td>
+                </tr>
+                <tr style="height: 9.75pt">
+                    <td width="19%"
+                        style="width: 19.0%; height: 9.75pt; border-left: 1.0pt inset black; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                        <p class="MsoNormal" align="center"
+                           style="text-align: center; line-height: 9.75pt; margin-bottom: .0001pt">
+                            <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						AC Chair Car</span></b></p></td>
+                    <td width="40%"
+                        style="width: 40.0%; height: 9.75pt; border-left: medium none; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                        <p class="MsoNormal" align="center"
+                           style="text-align: center; line-height: 9.75pt; margin-bottom: .0001pt">
+                            <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						100.00</span></b></p></td>
+                    <td width="40%"
+                        style="width: 40.0%; height: 9.75pt; border-left: medium none; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                        <p class="MsoNormal" align="center"
+                           style="text-align: center; line-height: 9.75pt; margin-bottom: .0001pt">
+                            <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						200.00</span></b></p></td>
+                </tr>
+                <tr style="height: 9.75pt">
+                    <td width="19%"
+                        style="width: 19.0%; height: 9.75pt; border-left: 1.0pt inset black; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                        <p class="MsoNormal" align="center"
+                           style="text-align: center; line-height: 9.75pt; margin-bottom: .0001pt">
+                            <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						AC 3 Tier</span></b></p></td>
+                    <td width="40%"
+                        style="width: 40.0%; height: 9.75pt; border-left: medium none; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                        <p class="MsoNormal" align="center"
+                           style="text-align: center; line-height: 9.75pt; margin-bottom: .0001pt">
+                            <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						250.00</span></b></p></td>
+                    <td width="40%"
+                        style="width: 40.0%; height: 9.75pt; border-left: medium none; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                        <p class="MsoNormal" align="center"
+                           style="text-align: center; line-height: 9.75pt; margin-bottom: .0001pt">
+                            <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						350.00</span></b></p></td>
+                </tr>
+                <tr style="height: 9.75pt">
+                    <td width="19%"
+                        style="width: 19.0%; height: 9.75pt; border-left: 1.0pt inset black; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                        <p class="MsoNormal" align="center"
+                           style="text-align: center; line-height: 9.75pt; margin-bottom: .0001pt">
+                            <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						AC 2 Tier</span></b></p></td>
+                    <td width="40%"
+                        style="width: 40.0%; height: 9.75pt; border-left: medium none; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                        <p class="MsoNormal" align="center"
+                           style="text-align: center; line-height: 9.75pt; margin-bottom: .0001pt">
+                            <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						300.00</span></b></p></td>
+                    <td width="40%"
+                        style="width: 40.0%; height: 9.75pt; border-left: medium none; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                        <p class="MsoNormal" align="center"
+                           style="text-align: center; line-height: 9.75pt; margin-bottom: .0001pt">
+                            <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						400.00</span></b></p></td>
+                </tr>
+                <tr style="height: 9.75pt">
+                    <td width="19%"
+                        style="width: 19.0%; height: 9.75pt; border-left: 1.0pt inset black; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                        <p class="MsoNormal" align="center"
+                           style="text-align: center; line-height: 9.75pt; margin-bottom: .0001pt">
+                            <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						Executive</span></b></p></td>
+                    <td width="40%"
+                        style="width: 40.0%; height: 9.75pt; border-left: medium none; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                        <p class="MsoNormal" align="center"
+                           style="text-align: center; line-height: 9.75pt; margin-bottom: .0001pt">
+                            <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						300.00</span></b></p></td>
+                    <td width="40%"
+                        style="width: 40.0%; height: 9.75pt; border-left: medium none; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                        <p class="MsoNormal" align="center"
+                           style="text-align: center; line-height: 9.75pt; margin-bottom: .0001pt">
+                            <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						400.00</span></b></p></td>
+                </tr>
+                </tbody>
+            </table>
+            <h6 class="text-center"> Tatkal Charges applicable for journey starting from 24.12.2015 onwards</h6>
+            <div class="table-responsive">
+
+                <table class="table table-bordered col-md-12" border="1">
+                    <tbody>
+                    <tr style="height: 19.5pt">
+                        <td style="width: 16%; height: 19.5pt; border: 1.0pt inset black; ">
+                            <p class="MsoNormal" align="center"
+                               style="text-align: center; line-height: normal; margin-bottom: .0001pt">
+                                <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						Class of Travel</span></b></p></td>
+                        <td style="width: 26%; height: 19.5pt; border-left: medium none; border-right: 1.0pt inset black; border-top: 1.0pt inset black; border-bottom: 1.0pt inset black; ">
+                            <p class="MsoNormal" align="center"
+                               style="text-align: center; line-height: normal; margin-bottom: .0001pt">
+                                <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						Minimum Tatkal Charges (in Rs.)</span></b></p></td>
+                        <td style="width: 30%; height: 19.5pt; border-left: medium none; border-right: 1.0pt inset black; border-top: 1.0pt inset black; border-bottom: 1.0pt inset black; ">
+                            <p class="MsoNormal" align="center"
+                               style="text-align: center; line-height: normal; margin-bottom: .0001pt">
+                                <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						Maximum Tatkal Charges</span></b></p>
+                            <p class="MsoNormal" align="center"
+                               style="text-align: center; line-height: normal; margin-bottom: .0001pt">
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						&nbsp;<b>(in Rs.)</b></span></p></td>
+                        <td style="width: 27%; height: 19.5pt; border-left: medium none; border-right: 1.0pt inset black; border-top: 1.0pt inset black; border-bottom: 1.0pt inset black; ">
+                            <p class="MsoNormal" align="center" style="margin-bottom: .0001pt">
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif; font-weight: 700">
+						Minimum Distance for charge(in Km)</span></p></td>
+                    </tr>
+                    <tr style="height: 10.5pt">
+                        <td style="width: 16%; height: 10.5pt; border-left: 1.0pt inset black; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                            <p class="MsoNormal" align="center"
+                               style="text-align: center; line-height: 10.5pt; margin-bottom: .0001pt">
+                                <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						Reserve Second sitting (2S)</span></b></p></td>
+                        <td style="width: 26%; height: 10.5pt; border-left: medium none; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                            <p class="MsoNormal" align="center"
+                               style="text-align: center; line-height: 10.5pt; margin-bottom: .0001pt">
+                                <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						10.00</span></b></p></td>
+                        <td style="width: 30%; height: 10.5pt; border-left: medium none; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                            <p class="MsoNormal" align="center"
+                               style="text-align: center; line-height: 10.5pt; margin-bottom: .0001pt">
+                                <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						15.00</span></b></p></td>
+                        <td style="width: 27%; height: 10.5pt; border-left: medium none; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                            <p class="MsoNormal" align="center" style="margin-bottom: .0001pt">
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif; font-weight: 700">
+						100</span></p></td>
+                    </tr>
+                    <tr style="height: 9.75pt">
+                        <td style="width: 16%; height: 9.75pt; border-left: 1.0pt inset black; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                            <p class="MsoNormal" align="center"
+                               style="text-align: center; line-height: 9.75pt; margin-bottom: .0001pt">
+                                <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						Sleeper</span></b></p></td>
+                        <td style="width: 26%; height: 9.75pt; border-left: medium none; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                            <p class="MsoNormal" align="center"
+                               style="text-align: center; line-height: 9.75pt; margin-bottom: .0001pt">
+						<span style="font-size: 8.5pt"><b>
+						<span style="font-family: Arial,sans-serif">100</span></b></span><b><span
+                                    style="font-size: 8.5pt; font-family: Arial,sans-serif">.00</span></b></p></td>
+                        <td style="width: 30%; height: 9.75pt; border-left: medium none; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                            <p class="MsoNormal" align="center"
+                               style="text-align: center; line-height: 9.75pt; margin-bottom: .0001pt">
+						<span style="font-size: 8.5pt"><b>
+						<span style="font-family: Arial,sans-serif">200</span></b></span><b><span
+                                    style="font-size: 8.5pt; font-family: Arial,sans-serif">.00</span></b></p></td>
+                        <td style="width: 27%; height: 9.75pt; border-left: medium none; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                            <p class="MsoNormal" align="center" style="margin-bottom: .0001pt">
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif; font-weight: 700">
+						500</span></p></td>
+                    </tr>
+                    <tr style="height: 9.75pt">
+                        <td style="width: 16%; height: 9.75pt; border-left: 1.0pt inset black; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                            <p class="MsoNormal" align="center"
+                               style="text-align: center; line-height: 9.75pt; margin-bottom: .0001pt">
+                                <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						AC Chair Car</span></b></p></td>
+                        <td style="width: 26%; height: 9.75pt; border-left: medium none; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                            <p class="MsoNormal" align="center"
+                               style="text-align: center; line-height: 9.75pt; margin-bottom: .0001pt">
+                                <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						125.00</span></b></p></td>
+                        <td style="width: 30%; height: 9.75pt; border-left: medium none; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                            <p class="MsoNormal" align="center"
+                               style="text-align: center; line-height: 9.75pt; margin-bottom: .0001pt">
+                                <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						225.00</span></b></p></td>
+                        <td style="width: 27%; height: 9.75pt; border-left: medium none; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                            <p class="MsoNormal" align="center" style="margin-bottom: .0001pt">
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif; font-weight: 700">
+						250</span></p></td>
+                    </tr>
+                    <tr style="height: 9.75pt">
+                        <td style="width: 16%; height: 9.75pt; border-left: 1.0pt inset black; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                            <p class="MsoNormal" align="center"
+                               style="text-align: center; line-height: 9.75pt; margin-bottom: .0001pt">
+                                <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						AC 3 Tier</span></b></p></td>
+                        <td style="width: 26%; height: 9.75pt; border-left: medium none; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                            <p class="MsoNormal" align="center"
+                               style="text-align: center; line-height: 9.75pt; margin-bottom: .0001pt">
+						<span style="font-size: 8.5pt"><b>
+						<span style="font-family: Arial,sans-serif">300</span></b></span><b><span
+                                    style="font-size: 8.5pt; font-family: Arial,sans-serif">.00</span></b></p></td>
+                        <td style="width: 30%; height: 9.75pt; border-left: medium none; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                            <p class="MsoNormal" align="center"
+                               style="text-align: center; line-height: 9.75pt; margin-bottom: .0001pt">
+						<span style="font-size: 8.5pt"><b>
+						<span style="font-family: Arial,sans-serif">400</span></b></span><b><span
+                                    style="font-size: 8.5pt; font-family: Arial,sans-serif">.00</span></b></p></td>
+                        <td style="width: 27%; height: 9.75pt; border-left: medium none; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                            <p class="MsoNormal" align="center" style="margin-bottom: .0001pt">
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif; font-weight: 700">
+						500</span></p></td>
+                    </tr>
+                    <tr style="height: 9.75pt">
+                        <td style="width: 16%; height: 9.75pt; border-left: 1.0pt inset black; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                            <p class="MsoNormal" align="center"
+                               style="text-align: center; line-height: 9.75pt; margin-bottom: .0001pt">
+                                <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						AC 2 Tier</span></b></p></td>
+                        <td style="width: 26%; height: 9.75pt; border-left: medium none; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                            <p class="MsoNormal" align="center"
+                               style="text-align: center; line-height: 9.75pt; margin-bottom: .0001pt">
+						<span style="font-size: 8.5pt"><b>
+						<span style="font-family: Arial,sans-serif">400</span></b></span><b><span
+                                    style="font-size: 8.5pt; font-family: Arial,sans-serif">.00</span></b></p></td>
+                        <td style="width: 30%; height: 9.75pt; border-left: medium none; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                            <p class="MsoNormal" align="center"
+                               style="text-align: center; line-height: 9.75pt; margin-bottom: .0001pt">
+						<span style="font-size: 8.5pt"><b>
+						<span style="font-family: Arial,sans-serif">5</span></b></span><b><span
+                                    style="font-size: 8.5pt; font-family: Arial,sans-serif">00.00</span></b></p></td>
+                        <td style="width: 27%; height: 9.75pt; border-left: medium none; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                            <p class="MsoNormal" align="center" style="margin-bottom: .0001pt">
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif; font-weight: 700">
+						500</span></p></td>
+                    </tr>
+                    <tr style="height: 9.75pt">
+                        <td style="width: 16%; height: 9.75pt; border-left: 1.0pt inset black; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                            <p class="MsoNormal" align="center"
+                               style="text-align: center; line-height: 9.75pt; margin-bottom: .0001pt">
+                                <b>
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+						Executive</span></b></p></td>
+                        <td style="width: 26%; height: 9.75pt; border-left: medium none; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                            <p class="MsoNormal" align="center"
+                               style="text-align: center; line-height: 9.75pt; margin-bottom: .0001pt">
+						<span style="font-size: 8.5pt"><b>
+						<span style="font-family: Arial,sans-serif">4</span></b></span><b><span
+                                    style="font-size: 8.5pt; font-family: Arial,sans-serif">00.00</span></b></p></td>
+                        <td style="width: 30%; height: 9.75pt; border-left: medium none; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                            <p class="MsoNormal" align="center"
+                               style="text-align: center; line-height: 9.75pt; margin-bottom: .0001pt">
+						<span style="font-size: 8.5pt"><b>
+						<span style="font-family: Arial,sans-serif">5</span></b></span><b><span
+                                    style="font-size: 8.5pt; font-family: Arial,sans-serif">00.00</span></b></p></td>
+                        <td style="width: 27%; height: 9.75pt; border-left: medium none; border-right: 1.0pt inset black; border-top: medium none; border-bottom: 1.0pt inset black; ">
+                            <p class="MsoNormal" align="center" style="margin-bottom: .0001pt">
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif; font-weight: 700">
+						250</span></p></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>
+					<span style="font-size: 8.5pt; font-family: Arial,sans-serif">
+					The above charges will be levied uniformly both in peak
+					period &amp; non-peak periods.</span></li>
+                                <li>
+					<span style="font-size: 8.5pt; font-family: Arial,sans-serif">Tatkal tickets will be issued for actual distance of travel,
+					instead of end-to-end, subject to the distance restriction
+					applicable to the train. The same Tatkal berth/seat may be
+					booked in multiple legs till preparation of charts. At the
+					time of preparation of charts, unutilized portion may be
+					released to the General RAC/Waiting list passengers. </span>
+                                </li>
+                                <li>
+					<span style="font-size: 8.5pt; font-family: Arial,sans-serif">Tatkal facility is also available in  Executive Class of
+					Shatabadi Express trains also, by earmarking 10% of the
+					accommodation available i.e. 5 seats per coach. </span></li>
+                                <li>
+					<span style="font-size: 8.5pt; font-family: Arial,sans-serif; color: black">Tatkal booking opens at 10 AM for AC Classes and 11 AM for NON-AC Classes on One days in advance&nbsp; actual
+					date of journey excluding date of journey w.e.f. of 15.06.2015(<a target="_blank"
+                                                                                      href="http://www.indianrail.gov.in/commercial_circular_34of2015.pdf">commercial circular no:34 of 2015</a>). e.g. for train leaving on 6<sup>th</sup>, Tatkal
+					Booking will Commence at 10 AM for AC Classes on 5<sup>th</sup> and at 11 AM for NON-AC Classes on 5<sup>th</sup>.</span>
+                                </li>
+                                <li><font face="Arial,sans-serif" style="font-size: 8.5pt">
+                                    No duplicate Tatkal tickets shall be issued. Duplicate
+                                    Tatkal tickets shall be issued only in exceptional cases on
+                                    payment of full fare including Tatkal charges.</font></li>
+                                <li><font face="Arial,sans-serif" style="font-size: 8.5pt">
+                                    At the time of Tatkal ticket booking no need to furnish identity proof,
+                                    Only one passenger needs to produce any one of the following proof of identity
+                                    in the original during the journey:-</font>
+                                    <br><br>
+                                    <p class="MsoNormal" style="margin-bottom:12.0pt;line-height:normal" align="left">
+                                        <font style="font-size: 8.5pt; font-family: Arial,sans-serif"
+                                              face="Arial,sans-serif">1.Voter Photo identity card issued by Election
+                                            Commision of
+                                            India.</font></p>
+                                    <p class="MsoNormal" style="margin-bottom:12.0pt;line-height:normal" align="left">
+                                        <font style="font-size: 8.5pt; font-family: Arial,sans-serif"
+                                              face="Arial,sans-serif">2.Passport</font></p>
+                                    <p class="MsoNormal" style="margin-bottom:12.0pt;line-height:normal" align="left">
+                                        <font style="font-size: 8.5pt; font-family: Arial,sans-serif"
+                                              face="Arial,sans-serif">3.PAN Card issued by Income Tax Department.</font>
+                                    </p>
+                                    <p class="MsoNormal" style="margin-bottom:12.0pt;line-height:normal" align="left">
+                                        <font style="font-size: 8.5pt; font-family: Arial,sans-serif"
+                                              face="Arial,sans-serif">4.Driving Licence issued by RTO.</font></p>
+                                    <p class="MsoNormal" style="margin-bottom:12.0pt;line-height:normal" align="left">
+                                        <font style="font-size: 8.5pt; font-family: Arial,sans-serif"
+                                              face="Arial,sans-serif">5.Photo identity card having serial number issued
+                                            by
+                                            Central/State Government.</font></p>
+                                    <p class="MsoNormal" style="margin-bottom:12.0pt;line-height:normal" align="left">
+                                        <font style="font-size: 8.5pt; font-family: Arial,sans-serif"
+                                              face="Arial,sans-serif">6.Student Identity Card with photograph issued by
+                                            recognized
+                                            School/College for their students.</font></p>
+                                    <p class="MsoNormal" style="margin-bottom:12.0pt;line-height:normal" align="left">
+                                        <font style="font-size: 8.5pt; font-family: Arial,sans-serif"
+                                              face="Arial,sans-serif">7.Nationalized Bank Passbok with
+                                            photograph.</font></p>
+                                    <p class="MsoNormal" style="margin-bottom:12.0pt;line-height:normal" align="left">
+                                        <font style="font-size: 8.5pt; font-family: Arial,sans-serif"
+                                              face="Arial,sans-serif">8.Credit cards issued by banks with laminated
+                                            photograph.</font></p>
+                                    <p class="MsoNormal" style="margin-bottom:12.0pt;line-height:normal" align="left">
+                                        <font style="font-size: 8.5pt; font-family: Arial,sans-serif"
+                                              face="Arial,sans-serif">9.Unique Identification Card "Aadhaar".</font></p>
+                                    <p class="MsoNormal" style="margin-bottom:12.0pt;line-height:normal" align="left">
+                                        <font style="font-size: 8.5pt; font-family: Arial,sans-serif"
+                                              face="Arial,sans-serif">10.Photo identity cards having serial number
+                                            issued by Public
+                                            Sector Undertaking of State/Central Government, District
+                                            Administration, Municipal bodies and Penchant Administration.</font></p>
+                                </li>
+                            </ul>
+                            <ul type="disc" style="margin-bottom: 0in">
+                                <li class="MsoNormal" style="line-height: normal; margin-bottom: 6.75pt">
+					<span style="font-size: 8.5pt; line-height: 115%; font-family: Arial,sans-serif">
+					Agents / RTSAs/Web service agents/Web agents of IRCTC are restricted from the booking Tatkal
+					tickets between 1000 hours and 1200 hours.
+					This restriction shall be
+					enforced through frequent inspection at the counters. The
+					agents both web service agents and web agents shall also be
+					restricted from booking Tatkal tickets on the internet
+					between 1000 hours and 1200 hours.</span></li>
+                                <li class="MsoNormal" style="line-height: normal; margin-bottom: 6.75pt">
+					<span style="font-size: 8.5pt; line-height: 115%; font-family: Arial,sans-serif">
+					Even for internet booking for Tatkal tickets, the passenger
+					shall enter the identity proof type and number, which is to
+					be used for travel. These details shall be printed on the
+					ERS/indicated on the VRM/MRM as well as in the reservation
+					chart.</span></li>
+                                <li class="MsoNormal" style="line-height: normal; margin-bottom: 6.75pt">
+					<span style="font-size: 8.5pt; line-height: 115%; font-family: Arial,sans-serif">
+					It will be possible to book a maximum of only four
+					passengers per PNR forTatkal tickets.</span></li>
+                                <li class="MsoNormal" style="line-height: normal; margin-bottom: 6.75pt">
+					<span style="font-size: 8.5pt; line-height: 115%; font-family: Arial,sans-serif">
+					The web services agents of IRCTC will be permitted to book
+					only one Tatkal ticket per train per day on the internet.</span></li>
+                                <li class="MsoNormal" style="line-height: normal; margin-bottom: 6.75pt">
+					<span style="font-size: 8.5pt; font-family: Arial,sans-serif; color: black">The facility of change of name is not permitted on the
+					bookings made under Tatkal scheme</span></li>
+                                <li class="MsoNormal" style="line-height: normal; margin-bottom: 6.75pt">
+                                    <span style="font-size: 8.5pt; font-family: Arial,sans-serif; color: black">TDRs are not being issued for waiting list tickets.</span>
+                                </li>
+                                <li class="MsoNormal" style="line-height: normal; margin-bottom: 6.75pt">
+                                    <b>
+                                        <span style="font-size: 8.5pt; font-family: Arial,sans-serif; color: black">REFUNDS&nbsp;</span></b><span
+                                        style="font-size: 8.5pt; font-family: Arial,sans-serif; color: black">&nbsp;
+					- No refund will be granted on cancellation of confirmed
+					Tatkal tickets/duplicate tatkal ticket except in case of circumstances mentioned in para 2 of instructions contained in Commercial Circular no.
+					53 of 2006 issued vide letter no. 2006/TGII/ 20/P/Tatkal,
+					dated 30.06.2006.&nbsp;However, full refund of fare and tatkal charges will be
+					granted on the tickets booked under Tatkal scheme in the
+					following circumstances :- </span>
+                                    <ul type="circle" style="margin-bottom: 0in">
+                                        <li class="MsoNormal" style="line-height: normal; margin-bottom: 6.75pt">
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif; color: black">If the train is delayed by more than 3 hours at the
+						journey originating point of the passenger &amp; not the
+						boarding point if the passenger's journey originating
+						point and boarding point are different.</span></li>
+                                        <li class="MsoNormal" style="line-height: normal; margin-bottom: 6.75pt">
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif; color: black">If the train is to run on a diverted route and passenger
+						is not willing to travel.</span></li>
+                                        <li class="MsoNormal" style="line-height: normal; margin-bottom: 6.75pt">
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif; color: black">If the train is to run on diverted route and boarding
+						station or the destination or both the stations are not
+						on the diverted route.</span></li>
+                                        <li class="MsoNormal" style="line-height: normal; margin-bottom: 6.75pt">
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif; color: black">In case of non attachment of coach in which Tatkal
+						accommodation has been earmarked and the passenger has
+						not been provided&nbsp; accommodation in the same class.</span></li>
+                                        <li class="MsoNormal" style="line-height: normal; margin-bottom: 6.75pt">
+						<span style="font-size: 8.5pt; font-family: Arial,sans-serif; color: black">If the party has been accommodated in lower class and
+						does not want to travel. In case the party travels in
+						lower class, the passenger will be given refund of
+						difference of fare and also the difference of Tatkal&nbsp;charges,
+						if any.</span></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}

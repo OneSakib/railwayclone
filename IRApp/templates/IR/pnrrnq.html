@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %}
+    Welcome to Indian Railway
+{% endblock %}
+
+{% load static %}
+{% block content %}
+    <div class="container-fluid">
+        <h5 class="text-center bg-primary text-white">Passenger Current Status Enquiry</h5>
+        <h6>Enter the PNR for your booking below to get the current status. You will find it on the top left corner of
+            the ticket.</h6>
+        <form action="{% url 'IR:pnrenqresult' %}" method="get">
+            {% csrf_token %}
+            <div class="row g-6">
+                <div class="col-6 text-center">
+                    <label class="form-label" for="pnr">Enter PNR No.</label>
+                </div>
+                <div class="col-6 text-center">
+                    <input type="text" placeholder="Enter PNR No." class="form-control" id="pnr" name="pnr">
+                </div>
+                <div class="col-6"></div>
+                <div class="col-6 text-center mt-2">
+                    <input type="submit" value="submit" class="btn btn-primary ">
+                    <input type="reset" value="clear" class="btn btn-primary">
+                </div>
+            </div>
+        </form>
+    </div>
+{% endblock %}

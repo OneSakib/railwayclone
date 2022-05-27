@@ -1,0 +1,580 @@
+{% extends 'base.html' %}
+{% block title %}
+    Welcome to Indian Railway
+{% endblock %}
+
+{% load static %}
+{% block content %}
+    <div class="container-fluid">
+        <div style="padding: 5px; margin-bottom: 2px">
+            <div class="row text-center bg-primary text-white p-2" style="padding: 5px;">
+                <strong>
+                    Other Railway Web Sites</strong>
+            </div>
+            <div class="row ">
+
+                <div>
+                    <br>
+                    <div class="table-responsive">
+
+
+                        <table class="table table-bordered">
+
+                            <tbody>
+                            <tr class="bg-primary text-white">
+
+                                <td class="heading_table_top"><strong>
+                                    Zonal Railways</strong></td>
+
+                                <td class="heading_table_top">
+                                    <b>Production Unit</b></td>
+
+                                <td width="25%" class="heading_table_top"><strong>
+                                    Corporate Sites</strong></td>
+
+                                <td width="19%" class="heading_table_top"><strong>
+                                    Others</strong></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.cr.indianrailways.gov.in">Central Railway(CR)</a></span></td>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+					
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.clw.indianrailways.gov.in">Chittaranjan Loco Works(CLW)</a></span>
+                                </td>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						<a target="_blank" style="color: #000000;  text-decoration:none" href="http://www.cris.org.in">
+						Centre for Railway Information Systems</a></span></td>
+
+                                <td class="table_border_both_left">
+                      <span style="line-height: 115%; font-family: 'Times New Roman'">
+						<a target="_blank" style="color: #000000;  text-decoration:none"
+                           href="http://www.indianrailways.gov.in/">
+						Indian Railways Portal</a></span></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.ecr.indianrailways.gov.in">East Central Railway(ECR)</a></span></td>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.dlw.indianrailways.gov.in">Diesel Locomotive Works(DLW)</a></span>
+                                </td>
+
+                                <td class="table_border_both_left">
+                                    <div style="mso-element:frame;mso-element-frame-hspace:9.0pt;mso-element-wrap:
+around;mso-element-anchor-vertical:paragraph;mso-element-anchor-horizontal:
+margin;mso-element-top:-61.8pt;mso-height-rule:exactly">
+							<span style="font-family: 'Times New Roman'">
+							<a target="_blank" style="color: #000000;  text-decoration:none"
+                               href="http://www.concorindia.com">
+							Container Corporation of India
+							Limited</a></span></div>
+                                </td>
+
+                                <td class="table_border_both_left">
+                                    
+                      <span style="line-height: 115%; font-family: 'Times New Roman'">
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.indianrailways.gov.in/railwayboard/">
+						Railway Board</a></span></td>
+                            </tr>
+                            <tr>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.eastcoastrail.indianrailways.gov.in">East Coast Railway(East
+						Coast)</a></span></td>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.dmw.indianrailways.gov.in">Diesel-Loco Modernisation Works(DMW)</a></span>
+                                </td>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						<a target="_blank" style="color: #000000;  text-decoration:none" href="http://www.ircon.org/">
+						IRCON International Limited</a></span></td>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						<a target="_blank" style="color: #000000;  text-decoration:none"
+                           href="http://www.nrcnwlko.gov.in">
+						Northern Railway Carriage and wagon
+						Workshop Lucknow</a></span></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.er.indianrailways.gov.in">Eastern Railway(ER)</a></span></td>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.icf.indianrailways.gov.in">Integral Coach Factory(ICF)</a></span>
+                                </td>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						<a target="_blank" style="color: #000000;  text-decoration:none" href="http://www.irctc.co.in">
+						Indian Railway Catering and Tourism
+						Corporation Limited</a></span></td>
+
+                                <td class="table_border_both_left">
+                                    <a target="_blank" style="color: #000000;text-decoration:none"
+                                       href="http://www.ireps.gov.in">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						Indian Railway E-Procurement</span></a></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.ncr.indianrailways.gov.in">North Central
+						Railway(NCR)</a></span></td>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.rcf.indianrailways.gov.in">Rail Coach Factory Kapurthala(RCF)</a></span>
+                                </td>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						<a target="_blank" style="color: #000000;  text-decoration:none" href="http://irfc.nic.in/">
+						Indian Railway Finance Corporation</a></span></td>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						<a target="_blank" style="color: #000000; text-decoration:none"
+                           href="http://www.trainenquiry.com">
+						<span style="line-height: 115%; text-decoration:none">
+						National Train Enquiry System</span></a></span></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.ner.indianrailways.gov.in">North Eastern Railway(NER)</a></span></td>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.rwf.indianrailways.gov.in">Rail Wheel Factory(RWF)</a></span></td>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						<a target="_blank" style="color: #000000;  text-decoration:none" href="http://www.irwo.in/">
+						Indian Railway Welfare Organisation</a></span></td>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						<a target="_blank" style="color: #000000; text-decoration:none"
+                           href="http://www.irt.indianrailways.gov.in">
+						<span style="line-height: 115%; text-decoration:none">
+						Institute of Rail Transport</span></a></span></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.nwr.indianrailways.gov.in">North Western
+						Railway(NWR)</a></span></td>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; text-decoration:none; font-family:Times New Roman">
+						<a target="_blank"
+                           style="color: #000000; text-decoration: none; line-height:115%; font-family:Times New Roman"
+                           href="http://www.core.indianrailways.gov.in">Central Organization for Railway Electrification(CORE)</a></span>
+                                </td>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						<a target="_blank" style="color: #000000;  text-decoration:none"
+                           href="http://www.konkanrailway.com">
+						Konkan Railway Corporation's</a></span></td>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+                                                
+                                                <span style="line-height: 115%; text-decoration:none">
+                                                <a target="_blank" style="color: #000000; text-decoration: none"
+                                                   href="http://www.dhr.indianrailways.gov.in">
+Darjeeling Himalayan Railway</a></span></span></td>
+
+                            </tr>
+
+                            <tr>
+
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.nfr.indianrailways.gov.in">Northeast Frontier Railways(NFR)</a></span>
+                                </td>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.rcfrbl.indianrailways.gov.in">Rail Coach Factory Raebareli(RCFRBL)</a></span>
+                                </td>
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						<a target="_blank" style="color: #000000;  text-decoration:none" href="http://www.rites.com">
+						RITES Limited</a></span></td>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						<a target="_blank" style="color: #000000; text-decoration:none"
+                           href="http://www.ircot.railnet.gov.in">
+						<span style="line-height: 115%; text-decoration:none">
+						Indian Railway Central Organization for
+						Telecom</span></a></span></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.nr.indianrailways.gov.in">Northern Railway
+						(NR)</a></span></td>
+
+                                <td class="table_border_both_left">
+                                    
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.rwp.indianrailways.gov.in">Rail Wheel
+						Plant Bela(RWP)</a></span></td>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						<a target="_blank" style="color: #000000;  text-decoration:none" href="http://www.rvnl.org">
+						Rail Vikas Nigam Limited</a></span></td>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; text-decoration:none; font-family:Times New Roman">
+						
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.nrm.indianrailways.gov.in">
+						National Rail Museum Sites</a></span></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.scr.indianrailways.gov.in">South Central Railway(SCR)</a></span></td>
+
+                                <td class="table_border_both_left">
+                                    
+						<span style="text-decoration:none; line-height:115%; font-family:Times New Roman">
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.iritm.indianrailways.gov.in">
+						&nbsp;</a></span><span style="line-height: 115%; font-family: 'Times New Roman'"><a
+                                        target="_blank" style="color: #000000; text-decoration: none"
+                                        href="http://www.mrvc.indianrailways.gov.in">Mumbai Railway Vikas Corporation(MRVC)</a></span>
+                                </td>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						<a target="_blank" style="color: #000000;  text-decoration:none"
+                           href="http://www.railtelindia.com">
+						RAILTEL Corporation of India Limited</a></span></td>
+
+                                <td class="table_border_both_left">
+                                    <a target="_blank" style="color: #000000;  text-decoration:none"
+                                       href="http://www.irts.org.in">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						Indian Railway Traffic Service
+						Association(IRTS)</span></a></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.secr.indianrailways.gov.in">South East Central Railway(SECR)</a></span>
+                                </td>
+
+                                <td
+                                        class="heading_table_top bg-primary text-white">
+                                    <strong>
+                                        Educational &amp; Research</strong></td>
+
+                                <td class="table_border_both_left">
+                                    &nbsp;
+                                </td>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						<a target="_blank" style="color: #000000; text-decoration:none"
+                           href="http://www.palaceonwheels.net">
+						<span style="line-height: 115%; text-decoration:none">
+						Palace on Wheels</span></a></span></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.ser.indianrailways.gov.in">South Eastern Railway(SER)</a></span></td>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						
+						<span style="line-height: 115%; text-decoration:none">
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.irieen.indianrailways.gov.in">Indian Railways Institute of Electrical
+						Engineering(IRIEEN)</a></span></span></td>
+
+                                <td class="table_border_both_left">
+                                    &nbsp;
+                                </td>
+
+                                <td class="table_border_both_left">
+                                    <a target="_blank" style="color: #000000;  text-decoration:none"
+                                       href="http://www.claims.indianrail.gov.in/">
+                                        
+                      <span style="line-height: 115%; font-family: 'Times New Roman'">
+						Railway Board Claims website</span></a></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.swr.indianrailways.gov.in">South Western
+						Railway(SWR)</a></span></td>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						
+						<span style="line-height: 115%; text-decoration:none">
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.irimee.indianrailways.gov.in">
+						Indian Railways Institute of Mechanical and Electrical
+						Engineering(IRIMEE)</a></span></span></td>
+
+                                <td class="table_border_both_left">
+                                    &nbsp;
+                                </td>
+                                <td class="table_border_both_left">
+                                    &nbsp;<span style="line-height: 115%; font-family: 'Times New Roman'"><a
+                                        target="_blank" style="color: #000000;  text-decoration:none"
+                                        href="http://www.railtourismindia.com/">Rail Tourism</a></span></td>
+
+
+                            </tr>
+
+                            <tr>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.sr.indianrailways.gov.in">Southern Railway(SR)</a></span></td>
+
+                                <td class="table_border_both_left">
+						<span style="text-decoration:none; line-height:115%; font-family:Times New Roman">
+						
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.iricen.indianrailways.gov.in">
+						Indian Railway Institute Of Civil Engineering(IRICEN)</a></span></td>
+
+                                <td class="table_border_both_left">
+                                    &nbsp;
+                                </td>
+
+                                <td class="table_border_both_left">
+                      <span style="line-height: 115%; font-family: 'Times New Roman'">
+                                                <a target="_blank" style="color: #000000; text-decoration:none"
+                                                   href="http://www.delhimetrorail.com">
+                                                <span style="line-height: 115%; text-decoration:none">
+                                                Delhi Metro Rail
+	Corporation</span></a></span></td>
+                            </tr>
+
+                            <tr>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.wcr.indianrailways.gov.in">West Central
+						Railway(WCR)</a></span></td>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						
+						<a target="_blank" style="color: #000000; text-decoration:none" href="http://www.rdso.gov.in">
+						<span style="line-height: 115%; text-decoration:none">
+						</span></a><a target="_blank" style="color: #000000; text-decoration: none"
+                                      href="http://www.rdso.indianrailways.gov.in">
+						Research Design and Standards Organization</a></span><u><span
+                                        style="line-height: 115%; "><a target="_blank"
+                                                                       style="color: #000000; text-decoration: none"
+                                                                       href="http://www.rdso.indianrailways.gov.in">(RDSO)</a></span></u>
+                                </td>
+
+                                <td class="table_border_both_left">
+                                    &nbsp;
+                                </td>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+                                                
+                                                <a target="_blank" style="color: #000000; text-decoration:none"
+                                                   href="http://www.cofmow.gov.in/">
+                                                <span style="line-height: 115%; text-decoration:none">
+                                                Central Organisation For Modernisation of Workshops(COFMOW)</span></a></span>
+                                </td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.wr.indianrailways.gov.in">Western Railway(WR)</a></span></td>
+
+                                <td class="table_border_both_left">
+                                    
+						<span style="text-decoration:none; line-height:115%; font-family:Times New Roman">
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.iritm.indianrailways.gov.in">
+						Indian Railway Institute Of Transport Management(IRITM)</a></span></td>
+
+                                <td class="table_border_both_left">
+                                    &nbsp;
+                                </td>
+
+                                <td class="table_border_both_left">
+						<span style="font-family: Times New Roman; line-height:115%; text-decoration:none; color:#000000">
+				<a target="_blank" href="http://www.the-maharajas.com/" style="text-decoration: none">
+						>Maharajas' Express</a></span></td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td class="table_border_both_left">
+						<span style="line-height: 115%; font-family: 'Times New Roman'">
+						
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.mtp.indianrailways.gov.in">Metro Railway,Kolkata(MTP)</a></span></td>
+
+                                <td class="table_border_both_left">
+						<span style="text-decoration:none; line-height:115%; font-family:Times New Roman">
+						
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.iriset.indianrailways.gov.in">
+						Indian Railway Institute Of Signal Engineering and
+						Telecommunications(IRISET)</a></span></td>
+
+                                <td class="table_border_both_left">
+                                    &nbsp;
+                                </td>
+
+                                <td class="table_border_both_left">
+                                    &nbsp;
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td class="table_border_both_left">
+                                    &nbsp;
+                                </td>
+
+                                <td class="table_border_both_left">
+						<span style="text-decoration:none; line-height:115%; font-family:Times New Roman">
+						
+						<a target="_blank" style="color: #000000; text-decoration: none"
+                           href="http://www.rscbrc.indianrailways.gov.in">National Academy of Indian Railways(NAIR)</a></span>
+                                </td>
+
+                                <td class="table_border_both_left">
+                                    &nbsp;
+                                </td>
+
+                                <td class="table_border_both_left">
+                                    &nbsp;
+                                </td>
+
+                            </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

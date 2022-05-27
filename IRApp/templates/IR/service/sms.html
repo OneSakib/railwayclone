@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block title %}
+    Welcome to Indian Railway
+{% endblock %}
+
+{% load static %}
+{% block content %}
+    <div class="container-fluid">
+        <h5 class="text-white p-2 bg-primary text-center">SMS Services</h5>
+        <p>
+            Now all the enquiries like Train Alert, PNR Status, Train Status, Seat Availability, Train Schedule, Train
+            Information, Train Time Table, Train Fare etc offered on the web site www.indianrail.gov.in are available on
+            your mobile phone through SMS facility. For more information on the mobile service providers and the key
+            words to be used on the mobile, please click here</p>
+        <p class="text-center">
+            <img src="{% static 'img/sms_serv-4.gif' %}">
+        </p>
+    </div>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %}
+    Welcome to Indian Railway
+{% endblock %}
+
+{% load static %}
+{% block content %}
+    <div class="container-fluid">
+        <h5 class="text-center bg-primary text-white p-2">Passenger Current Status Enquiry</h5>
+        <h6>Enter the PNR for your booking below to get the current status. You will find it on the top left corner of
+            the ticket.</h6>
+
+        <div class="row">
+            <h5 class="text-center"><b>{{ data.heading }}</b></h5>
+            <h6>Your PNR No is: <b>{{ pnr_value }}</b></h6>
+            <div class="col-6 border p-3">
+                {% for d in data.boarding %}
+                    <b>{{ d }}</b> <br>
+                {% empty %}
+
+                {% endfor %}
+            </div>
+            <div class="col-6 border p-3">
+                {% for d in data.destination %}
+                    <b>{{ d }}</b> <br>
+                {% empty %}
+
+                {% endfor %}
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+{% block title %}
+    Welcome to Indian Railway
+{% endblock %}
+
+{% load static %}
+{% block content %}
+    <div class="container-fluid">
+        <h5 class="bg-primary text-white text-center p-2">Accommodation Availability Enquiry on Trains till
+            Departure</h5>
+        <div class="row mt-2">
+            <div class="col-6 mt-2">
+                <label for="traino"><b>Enter Train Number</b></label>
+            </div>
+            <div class="col-6 mt-2">
+                <input type="text" placeholder="Train Number" id="trainno">
+            </div>
+            <div class="col-6 mt-2">
+                <label for="jdate"><b>Enter Journey Date</b></label>
+            </div>
+            <div class="col-6 mt-2">
+                <input type="date" id="jdate">
+            </div>
+            <div class="col-6 mt-2">
+                <label for="source"><b>Enter Source Station</b></label>
+            </div>
+            <div class="col-6 mt-2">
+                <input type="text" placeholder="Enter Source Station" id="source">
+            </div>
+            <div class="col-6 mt-2">
+                <label for="destination"><b>Enter Destination Station</b></label>
+            </div>
+            <div class="col-6 mt-2">
+                <input type="text" placeholder="Enter Destination Station" id="destination">
+            </div>
+            <div class="col-6 mt-2">
+                <label for="eclass"><b>Enter Class</b></label>
+            </div>
+            <div class="col-6 mt-2">
+                <select id="eclass">
+                    <option value="1A"> FIRST AC</option>
+                    <option value="EC"> EXECUTIVE CLASS</option>
+                    <option value="EA">EXECUTIVE ANUBHUTI</option>
+                    <option value="2A"> SECOND AC</option>
+                    <option value="3A"> THIRD AC</option>
+                    <option value="3E">3 AC Economy</option>
+                    <option value="CC"> AC CHAIR CAR</option>
+                    <option value="FC"> FIRST CLASS</option>
+                    <option selected="selected" value="SL"> SLEEPER CLASS</option>
+                    <option value="2S"> SECOND SEATING</option>
+                    <option value="VS"> VISTADOME NON AC</option>
+                    <option value="CH"> CHAIR CAR HIGH CAPACITY</option>
+                    <option value="SH"> SLEEPER HIGH CAPACITY</option>
+                    <option value="VC"> VISTADOME_CC</option>
+                    <option value="EV"> VISTADOME AC</option>
+                </select>
+            </div>
+            <div class="col-6 mt-2">
+                <label for="quota"><b>Enter Quota</b></label>
+            </div>
+            <div class="col-6 mt-2">
+                <select id="quota">
+                    <option value="TQ"> Tatkal Quota</option>
+                    <option value="LD"> Ladies Quota</option>
+                    <option value="DF"> Defence Quota</option>
+                    <option value="FT"> Foreign Tourist Quota</option>
+                    <option value="SS"> Lower Berth Quota</option>
+                    <option value="PT"> Premium Tatkal Quota</option>
+                    <option value="YU"> Yuva Quota</option>
+                    <option value="DP"> Duty Pass Quota</option>
+                    <option value="HP"> Handicaped Quota</option>
+                    <option value="PH"> Parliament House</option>
+                    <option selected="selected" value="GN"> General Quota</option>
+                </select>
+            </div>
+            <div class="col-6"></div>
+            <div class="col-3">
+                <input type="submit" value="Get Availability" class="btn btn-primary mt-3">
+            </div>
+        </div>
+    </div>
+{% endblock %}

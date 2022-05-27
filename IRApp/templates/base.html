@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <!-- Bootstrap CSS -->
+    <link href="{% static 'Bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" crossorigin="anonymous">
+    <link href="{% static 'Bootstrap/css/style.css' %}" rel="stylesheet">
+    <link rel="icon" href="{% static 'img/rail.gif' %}">
+    <style>
+        .navbar {
+            background-color: RGB(51, 122, 183);
+        }
+
+        .navbar-brand {
+            color: white;
+        }
+
+        .navbar-brand:hover {
+            color: RGB(255, 51, 0);
+        }
+
+        .nav-link {
+            color: white;
+        }
+
+        .nav-link:hover {
+            color: RGB(255, 51, 0);
+        }
+
+        footer {
+            position: relative;
+            height: 100px;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: auto;
+        }
+
+        .middle a {
+            text-decoration: none;
+        }
+
+        .middle a:hover {
+            border-bottom: 1px solid red;
+            color: black;
+        }
+
+    </style>
+    {% block css %}{% endblock %}
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="{% url 'IR:index' %}">Indian Railway Enquiry</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-dark"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'IR:pnrenquiry' %}">PNR Enquiry</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'IR:reservedtbs' %}">Reserved Train
+                        Between Stations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="https://www.indianrail.gov.in/enquiry/SEAT/SeatAvailability.html?locale=en">Seat Availability</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="https://www.indianrail.gov.in/enquiry/FARE/FareEnquiry.html?locale=en">Fare Enquiry</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="https://www.indianrail.gov.in/enquiry/SCHEDULE/TrainSchedule.html?locale=en">Reserved
+                        Train
+                        Schedule</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- This is head  !-->
+<div class="container mt-2">
+    <div class="row">
+        <div class="col-2">
+            <img src="{% static 'img/rail.gif' %}">
+        </div>
+        <div class="col-8 mt-4">
+            <h4 class="text-center">INDIAN RAILWAYS PASSENGER RESERVATION ENQUIRY</h4>
+        </div>
+        <div class="col-2">
+            <img src="{% static 'img/cris.gif' %}">
+            <img src="{% static 'img/india.gif' %}">
+        </div>
+        <marquee behavior="scroll" direction="left">Please help Indian railways and government
+            of India in moving towards a digitized and cashless economy. Eradicate black money.
+        </marquee>
+    </div>
+</div>
+<!-- This is middle  !-->
+<div class="container middle">
+    <div class="row">
+        <div class="col-md-3 col-6">
+            <div class="border" style="cursor: pointer">
+                <h5 class="p-2 ls-1">
+                    <a class="services " style="color: black">
+                        Services
+                    </a>
+                </h5>
+                <ul class="list-group  " id="ls-1">
+                    <li class=" list-group-item  border p-2"><a
+                            href="https://www.fois.indianrail.gov.in/RailSAHAY/index.jsp">Freight
+                        Business</a></li>
+                    <li class=" list-group-item  border p-2"><a href="{% url 'IR:mobiletrack' %}">Mobile
+                        Tracking Services</a></li>
+                    <li class=" list-group-item  border p-2"><a href="{% url 'IR:ftr' %}">Registration
+                        of Train/Coach on Full Tariff
+                        Rate(FTR)</a></li>
+                    <li class=" list-group-item  border p-2"><a href="https://enquiry.indianrail.gov.in/mntes/">National
+                        Train
+                        Enquiry System</a></li>
+                    <li class=" list-group-item  border p-2"><a href="{% url 'IR:sms' %}">SMS
+                        Service</a></li>
+                </ul>
+            </div>
+            <div class=" border" style="cursor: pointer">
+                <h5 class="p-2 ls-2">
+                    <a class="services" style="color: black">
+                        Information
+                    </a>
+                </h5>
+                <ul class="list-group " id="ls-2">
+                    <li class=" list-group-item  border p-2"><a
+                            href="http://www.indianrailways.gov.in/railwayboard/view_section.jsp?lang=0&id=0,1,304,366,537">TRAINS
+                        AT A
+                        GLANCE 2019-20 </a></li>
+                    <li class=" list-group-item  border p-2">
+                        <h6 class="p-2 ls-3">
+                            <a>
+                                Train Type Information
+                            </a>
+                        </h6>
+                        <ul class="list-group" id="ls-3">
+                            <li class="list-group-item p-2"><a href="{% url 'IR:luxerytrain' %}">Luxury
+                                Train</a></li>
+                            <li class="list-group-item p-2"><a href="{% url 'IR:specialhill' %}">Special
+                                Hill</a></li>
+                        </ul>
+                    </li>
+                    <li class=" list-group-item  border p-2"><a href="{% url 'IR:cateringcharg' %}">Catering
+                        Changes</a></li>
+                    <li class=" list-group-item  border p-2">
+                        <h6 class="p-2 ls-4">
+                            <a>
+                                View Codes
+                            </a>
+                        </h6>
+                        <ul class="list-group" id="ls-4">
+                            <li class="list-group-item p-2"><a href="{% url 'IR:quotacode' %}">Quota
+                                Codes</a></li>
+                            <li class="list-group-item p-2"><a href="https://enquiry.indianrail.gov.in/mntes/">Station
+                                Name</a></li>
+                        </ul>
+                    </li>
+                    <li class=" list-group-item  border p-2"><a href="{% url 'IR:tatkal' %}">Tatkal
+                        Scheme</a></li>
+                    <li class=" list-group-item  border p-2">
+                        <h6 class="p-2 ls-5">
+                            <a>
+                                Rules
+                            </a>
+                        </h6>
+                        <ul class="list-group" id="ls-5">
+                            <li class="list-group-item p-2"><a href="{% url 'IR:reservation' %}">
+                                Reservation</a></li>
+                            <li class="list-group-item p-2"><a href="{% url 'IR:refund' %}">Refund </a>
+                            </li>
+                            <li class="list-group-item p-2"><a href="{% url 'IR:luggage' %}">Luggage </a>
+                            </li>
+                            <li class="list-group-item p-2"><a href="{% url 'IR:other' %}"> Other
+                                Rules</a></li>
+                        </ul>
+                    </li>
+                    <li class=" list-group-item  border p-2"><a href="{% url 'IR:internationaltourist' %}">International
+                        Tourists </a></li>
+                    <li class=" list-group-item  border p-2"><a href="{% url 'IR:otherrailwaywebsite' %}">Other Railway
+                        Websites</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="col-md-9 col-6">
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+</div>
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p>
+            Copyright © 2017, Centre For Railway Information Systems, Designed and Hosted by CRIS
+        </p>
+    </footer>
+</div>
+</body>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="{% static 'Bootstrap/js/bootstrap.bundle.min.js' %}" crossorigin="anonymous"></script>
+<script src="{% static 'Bootstrap/jquery/jquery-3.6.0.js' %}"></script>
+{% block js %}{% endblock %}
+<script>
+    $('#ls-1').hide()
+    $('#ls-2').hide()
+    $('#ls-3').hide()
+    $('#ls-4').hide()
+    $('#ls-5').hide()
+    $('.ls-1').click(function () {
+        $('#ls-1').slideToggle()
+    })
+    $('.ls-2').click(function () {
+        $('#ls-2').slideToggle()
+    })
+    $('.ls-3').click(function () {
+        $('#ls-3').slideToggle()
+    })
+    $('.ls-4').click(function () {
+        $('#ls-4').slideToggle()
+    })
+    $('.ls-5').click(function () {
+        $('#ls-5').slideToggle()
+    })
+</script>
+</html>

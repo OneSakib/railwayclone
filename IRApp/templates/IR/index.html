@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}
+    Welcome to Indian Railway
+{% endblock %}
+
+{% load static %}
+{% block content %}
+    <div class="container-fluid">
+        <a href="http://203.176.113.79/acc_chart.html" target="_blank"><b>Train Accident Chart (Train No/Name: 15633/BKN
+            GHY EXPRESS, From/To: BIKANER JN/GUWAHATI )</b></a>
+        <marquee class="pull-center" behavior="scroll" direction="left">
+            <img src="http://indianrailways.gov.in/images/new.gif" alt=""><a target="_blank"
+                                                                             href="https://rashtragaan.in/"> <strong>Contribute
+            your rendering of the National Anthem of India at : https://rashtragaan.in/ </strong></a>
+            <img src="http://indianrailways.gov.in/images/new.gif" alt="">COVID-19 Appropriate behaviour - Wear Mask,
+            Physical Distancing, Maintain Hand Hygiene - Indian Railways
+            <img src="http://indianrailways.gov.in/images/new.gif" alt=""><a href="javascript:AlertIt();"> <strong>
+            COVID19 Parcel Special Trains</strong></a>
+            <img src="http://indianrailways.gov.in/images/new.gif" alt=""><a href="http://www.parcel.indianrail.gov.in">
+            <strong> For Parcel Freight click here, then from Booking menu, click Online Parcel Booking</strong></a>
+        </marquee>
+        <div>
+            <a href="http://127.0.0.1:8000/#"> <img src="{% static 'img/3rpbtfC38B9muoRQ.jpg' %}" style="width: 100%"
+                                                    alt="not"></a>
+            <a href="https://www.indianrail.gov.in/enquiry/StaticPages/www.india.gov.in"> <img
+                    src="{% static 'img/india_portal.gif' %}" alt="not" style="float: right"></a>
+            <a href="https://www.indianrail.gov.in/enquiry/StaticPages/StaticEnquiry.jsp?StaticPage=index.html&locale=en#">
+                <h4 class="mt-4">Experience Our services</h4>
+            </a>
+            <p>India has some of the most spectacular and unforgettable rail journeys in the world. Here you
+                experience a simple way to find out everything you need to know in one easy place. There's no better
+                way to enjoy India's outback, cities, coastal towns and regional areas in comfort.</p>
+        </div>
+    </div>
+{% endblock %}

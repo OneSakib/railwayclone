@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block title %}
+    Welcome to Indian Railway
+{% endblock %}
+
+{% load static %}
+{% block content %}
+    <div class="container-fluid">
+        <form method="get" action="{% url 'IR:gettrainresult' %}">
+            {% csrf_token %}
+            <div class="row  mt-3">
+                <div class="col-6 mb-2">
+                    <label for="source" class="form-label"><b>Select Source Station</b></label>
+                </div>
+                <div class="col-6 mb-2">
+                    <input class="form-control " list="sourcelist" id="source"
+                           placeholder="Enter the Source Station Name" name="source">
+                    <datalist id="sourcelist">
+                        {% for s in Railway_station %}
+                            <option value="{{ s.name }}"></option>
+                        {% endfor %}
+                    </datalist>
+                </div>
+                <div class="col-6 mb-2">
+                    <label for="destination" class="form-label"><b>Select Destination Station</b></label>
+                </div>
+                <div class="col-6 mb-2">
+                    <input class="form-control " list="destinationlist" id="destination"
+                           placeholder="Enter the Source Station Name" name="destination">
+                    <datalist id="destinationlist">
+                        {% for s in Railway_station %}
+                            <option value="{{ s.name }}"></option>
+                        {% endfor %}
+                    </datalist>
+                </div>
+                <div class="col-6 mb-2">
+                    <input value="clear" type="reset" class="btn btn-danger" id="go">
+                </div>
+                <div class="col-6 mb-2">
+                    <input value="Go" type="submit" class="btn btn-primary">
+                </div>
+            </div>
+        </form>
+    </div>
+{% endblock %}

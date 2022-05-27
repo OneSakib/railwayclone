@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}
+    Welcome to Indian Railway
+{% endblock %}
+
+{% load static %}
+{% block content %}
+    <div class="container-fluid">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Sr.</th>
+                <th>Train No/Name/Routine</th>
+                <th>From/Arrival/To/Departure</th>
+                <th>Total Km/Time Duration</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                {% if data.data %}
+
+                    {% for d in data.data %}
+                        <td>{{ d }}</td>
+                        {% if forloop.counter|divisibleby:4 %}
+                            </tr>
+                        {% endif %}
+                    {% endfor %}
+                {% else %}
+                    <tr>
+                        <td colspan="4"><h5 class="text-danger">There id not Train between them....</h5></td>
+                    </tr>
+                {% endif %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
