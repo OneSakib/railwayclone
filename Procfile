@@ -1,0 +1,1 @@
+web: gunicorn IREnquiryClone.wsgi --log-file
